@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>STROKE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+
+  <!-- Google Fonts API -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+
+  <!-- Not Sure If Need One or Both of These -->
+  <script src="dist/leaflet-timeline-slider.min.js"></script>
+  <script src="src/leaflet-timeline-slider.js"></script>
+
+  <!-- Our Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/stylem.css">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+<!-- Nav Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Stroke Mortlity Data Among US Adults (35+) by State/Territory and County
+                  <!-- <img class="nav-covid" src="assets/images/covid19.jpeg"> -->
+                </a>
+              </div>
+            </div>
+        </nav>
+<!-- Main Image -->
+        
+
+        <div class = "container">
+<!--TOP CARDS-->
+            <div class="row">
+                <div class="card-deck">
+
+                    <div class="col-md-4">
+                        <div class="card text-center" style = "background:#84ddc8a6" id = "confirmed-card">
+                        <h3 class="card-header" style = "background:rgb(64, 75, 72); padding:10px;">US </h3>
+                        
+                    </div>
+                
+                </div>
+            </div> 
+ 
+    <div class="row">
+    <!-- MAP -->
+        <div class="col-md-12" id="map"></div>
+              
+    </div>
+
+
+<div class = "row">
+ <!-- Card Count  -->
+ <div class="row">
+    <div class="col-md-6" id="card">
+        <div class="card text-center" style = "background:#84ddc8a6;">
+          <h3 class="card-header" style = "background:rgb(64, 75, 72); padding:10px;">relevant info</h3>
+            <div class="card-body scroll-box">
+                <table class = "table table-hover ">
+                    <thead>
+                        <th scope="col">table</th>
+                        <th scope="col">A</th>
+                        <th scope="col">B</th>
+                        <th scope="col">C</th>
+                    </thead>
+                    <tbody>
+                       <!-- DATA HERE -->
+                       <!-- <tr>
+                           <td></td>
+                       </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        
+        </div>
+    </div>
+
+
+    </div>
+
+</div>
+        </div>
+
+        <footer class="footer">
+            <span class="bottom"></span>
+        </footer>
+
+    </div>
+
+    <!-- API key -->
+    <script type="text/javascript" src="assets/js/config.js"></script>
+    <!-- Our JS -->
+    <script type="text/javascript" src="assets/js/logic2.js"></script>
+    
+
+
+</body>
+
+</html>
